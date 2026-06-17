@@ -8,8 +8,4 @@ You can use this tool by just doing:
 cr_bindgen my_headers.h -o ./my_bindings.rlib
 ```
 
-But this tool only creates the bindings, when you are compiling your Rust code, you still have to explicitly link against the pre-compiled libraries to make it work, like so:
-
-```bash
-rustc main.rs -L native=/path/to/libs -l static=foo
-```
+But this tool also can instruct the Rust compiler to link to that library when compiling your source code so you don't have to explicitly do so, by just specifying the library associated with the header file.
