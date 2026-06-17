@@ -19,4 +19,4 @@ unsafe {
 }
 ```
 
-And the CR libcbind will automatically handle the conversion for you, allowing you to use libc in Rust smoothly.
+The CR libcbind will automatically handle the type conversion for you, allowing you to use libc in Rust smoothly.
